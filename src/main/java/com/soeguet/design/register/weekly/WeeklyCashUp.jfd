@@ -1,0 +1,2785 @@
+JFDML JFormDesigner: "8.1.0.0.283" Java: "17.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		"$setComponentNames": true
+		auxiliary() {
+			"JavaCodeGenerator.memberVariableThis": true
+			"JavaCodeGenerator.defaultVariableModifiers": 4
+			"JavaCodeGenerator.defaultHandlerModifiers": 1028
+			"JavaCodeGenerator.memberVariablePrefix": "form_"
+		}
+		add( new FormContainer( "javax.swing.JInternalFrame", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$columnConstraints": "[grow,fill][856:855,grow,fill]"
+			"$rowConstraints": "[grow,fill][grow,fill][grow,fill]"
+		} ) {
+			name: "this"
+			"closable": true
+			"iconifiable": true
+			"maximizable": true
+			"resizable": true
+			"title": "weekly"
+			"visible": true
+			"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+			"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+			"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+			auxiliary() {
+				"JavaCodeGenerator.variableModifiers": 4
+			}
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "file"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "settingsBtn"
+						"text": "settings"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "settingsBtnActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JPopupMenu$Separator" ) {
+						name: "separator4"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "exitBtn"
+						"text": "exit"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exitBtnActionPerformed", true ) )
+					} )
+				} )
+			}
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+				"$layoutConstraints": "insets 0,hidemode 3,gap 0 0"
+				"$columnConstraints": "[grow,fill][grow,fill]"
+				"$rowConstraints": "[grow,fill]"
+			} ) {
+				name: "bottomPanel"
+				"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$rowConstraints": "[]"
+					"$columnConstraints": "[]"
+					"$layoutConstraints": "fill,align center center,wrap 1"
+				} ) {
+					name: "panel4"
+					"focusable": false
+					"enabled": false
+					"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "extraChangeIntermediateLabel"
+						"text": "0 €"
+						"border": new javax.swing.border.TitledBorder( "change total" )
+						"horizontalAlignment": 4
+						"focusable": false
+						"inheritsPopupMenu": false
+						"requestFocusEnabled": false
+						"verifyInputWhenFocusTarget": false
+						"enabled": false
+						"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+						"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0,grow"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "intermediateValueCoinsLabel"
+						"text": "0,00 €"
+						"border": new javax.swing.border.TitledBorder( "coins" )
+						"horizontalTextPosition": 4
+						"horizontalAlignment": 4
+						"focusable": false
+						"font": &SwingDerivedFont1 new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+						"enabled": false
+						"verifyInputWhenFocusTarget": false
+						"requestFocusEnabled": false
+						"inheritsPopupMenu": false
+						"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 1,grow"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "intermediateValueNotesLabel"
+						"text": "0,00 €"
+						"border": new javax.swing.border.TitledBorder( "notes" )
+						"horizontalTextPosition": 4
+						"horizontalAlignment": 4
+						"focusable": false
+						"font": #SwingDerivedFont1
+						"enabled": false
+						"verifyInputWhenFocusTarget": false
+						"requestFocusEnabled": false
+						"inheritsPopupMenu": false
+						"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 2,grow"
+					} )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 0"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$layoutConstraints": "insets 0,hidemode 3,gap 0 0"
+					"$columnConstraints": "[grow,fill]"
+					"$rowConstraints": "[grow,fill]"
+				} ) {
+					name: "panel6"
+					"focusable": false
+					"enabled": false
+					"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "differenceValueLabel"
+						"text": "0,00 €"
+						"border": new javax.swing.border.TitledBorder( "DELTA" )
+						"horizontalAlignment": 4
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+						"focusable": false
+						"inheritsPopupMenu": false
+						"requestFocusEnabled": false
+						"verifyInputWhenFocusTarget": false
+						"enabled": false
+						"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "totalValueLabel"
+						"text": "0,00 €"
+						"horizontalAlignment": 4
+						"border": new javax.swing.border.TitledBorder( "TOTAL" )
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+						"focusable": false
+						"enabled": false
+						"inheritsPopupMenu": false
+						"requestFocusEnabled": false
+						"verifyInputWhenFocusTarget": false
+						"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 1"
+					} )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 0"
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 2"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+				"$columnConstraints": "[fill]"
+				"$rowConstraints": "[fill][grow,fill]"
+				"$layoutConstraints": "fill"
+			} ) {
+				name: "kassensturzErweiterungPanel"
+				"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"font": #SwingDerivedFont0
+				"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"enabled": false
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$columnConstraints": "[][][fill][]"
+					"$rowConstraints": "[center]"
+					"$layoutConstraints": "fill"
+				} ) {
+					name: "rollPanel"
+					"border": new javax.swing.border.TitledBorder( "rolls" )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+						"$columnSpecs": "center:0:1.0"
+						"$rowSpecs": "0:1.0, 0:1.0, 0:1.0, 0:1.0, 0:1.0, 0:1.0, 0:1.0, 0:1.0"
+						"$alignTop": true
+						"$alignLeft": true
+					} ) {
+						name: "panel37"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twoEuroRollValue"
+							"text": "2,00 €"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "oneEuroRollValue"
+							"text": "1,00 €"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 1
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiftyCentRollValue"
+							"text": "0,50 €"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 2
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twentyCentRollValue"
+							"text": "0,20 €"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 3
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "tenCentRollValue"
+							"text": "0,10 €"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 4
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiveCentRollValue"
+							"text": "0,05 €"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 5
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twoCentRollValue"
+							"text": "0,02 €"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 6
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "oneCentRollValue"
+							"text": "0,01 €"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 7
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0,grow"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+						"$columnSpecs": "center:0:1.0"
+						"$rowSpecs": "0:1.0, 0:1.0, 0:1.0, 0:1.0, 0:1.0, 0:1.0, 0:1.0, 0:1.0"
+						"$alignTop": true
+						"$alignLeft": true
+					} ) {
+						name: "panel36"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twoEuroRollAmount"
+							"text": "25x"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "oneEuroRollAmount"
+							"text": "25x"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 1
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiftyCentRollAmount"
+							"text": "40x"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 2
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twentyCentRollAmount"
+							"text": "40x"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 3
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "tenCentRollAmount"
+							"text": "40x"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 4
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiveCentRollAmount"
+							"text": "50x"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 5
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twoCentRollAmount"
+							"text": "50x"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 6
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "oneCentRollAmount"
+							"text": "50x"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 7
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 1 0,grow"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$layoutConstraints": "fill,alignx center"
+						"$columnConstraints": "[fill]"
+					} ) {
+						name: "panel20"
+						"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "rollTwoEuroSpinner"
+							"font": #SwingDerivedFont0
+							"model": &SpinnerNumberModel0 new javax.swing.SpinnerNumberModel {
+								minimum: 0
+							}
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 0"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "rollOneEuroSpinner"
+							"font": #SwingDerivedFont0
+							"model": &SpinnerNumberModel1 new javax.swing.SpinnerNumberModel {
+								minimum: 0
+							}
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 1"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "rollFiftyCentSpinner"
+							"font": #SwingDerivedFont0
+							"model": &SpinnerNumberModel2 new javax.swing.SpinnerNumberModel {
+								minimum: 0
+							}
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 2"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "rollTwentyCentSpinner"
+							"font": #SwingDerivedFont0
+							"model": &SpinnerNumberModel3 new javax.swing.SpinnerNumberModel {
+								minimum: 0
+							}
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 3"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "rollTenCentSpinner"
+							"font": #SwingDerivedFont0
+							"model": &SpinnerNumberModel4 new javax.swing.SpinnerNumberModel {
+								minimum: 0
+							}
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 4"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "rollFiveCentSpinner"
+							"font": #SwingDerivedFont0
+							"model": &SpinnerNumberModel5 new javax.swing.SpinnerNumberModel {
+								minimum: 0
+							}
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 5"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "rollTwoCentSpinner"
+							"font": #SwingDerivedFont0
+							"model": &SpinnerNumberModel6 new javax.swing.SpinnerNumberModel {
+								minimum: 0
+							}
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 6"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "rollOneCentSpinner"
+							"font": #SwingDerivedFont0
+							"model": &SpinnerNumberModel7 new javax.swing.SpinnerNumberModel {
+								minimum: 0
+							}
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 7"
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 2 0,aligny top,growy 0"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$layoutConstraints": "fill,alignx center"
+						"$columnConstraints": "[grow,fill]"
+					} ) {
+						name: "panel34"
+						"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "rollTwoEuroSpinner2"
+							"font": #SwingDerivedFont0
+							"model": #SpinnerNumberModel0
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 0"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "rollOneEuroSpinner2"
+							"font": #SwingDerivedFont0
+							"model": #SpinnerNumberModel1
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 1"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "rollFiftyCentSpinner2"
+							"font": #SwingDerivedFont0
+							"model": #SpinnerNumberModel2
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 2"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "rollTwentyCentSpinner2"
+							"font": #SwingDerivedFont0
+							"model": #SpinnerNumberModel3
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 3"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "rollTenCentSpinner2"
+							"font": #SwingDerivedFont0
+							"model": #SpinnerNumberModel4
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 4,growx"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "rollFiveCentSpinner2"
+							"font": #SwingDerivedFont0
+							"model": #SpinnerNumberModel5
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 5"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "rollTwoCentSpinner2"
+							"font": #SwingDerivedFont0
+							"model": #SpinnerNumberModel6
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 6"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "rollOneCentSpinner2"
+							"font": #SwingDerivedFont0
+							"model": #SpinnerNumberModel7
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 7"
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 3 0,grow"
+					} )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 0,grow"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$columnConstraints": "[grow,trailing][grow][grow]"
+					"$rowConstraints": "[center]"
+					"$layoutConstraints": "fill"
+				} ) {
+					name: "boxPanel"
+					"border": new javax.swing.border.TitledBorder( "boxes" )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$columnConstraints": "[fill]"
+						"$rowConstraints": "[][][][][][][][]"
+						"$layoutConstraints": "fill"
+					} ) {
+						name: "panel38"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twoEuroBoxValue"
+							"text": "2,00 €"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 0"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "oneEuroBoxValue"
+							"text": "1,00 €"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 1"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiftyCentBoxValue"
+							"text": "0,50 €"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 2"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twentyCentBoxValue"
+							"text": "0,20 €"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 3"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "tenCentBoxValue"
+							"text": "0,10 €"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 4"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiveCentBoxValue"
+							"text": "0,05 €"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 5"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twoCentBoxValue"
+							"text": "0,02 €"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 6"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "oneCentBoxValue"
+							"text": "0,01 €"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 7"
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0,grow"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$columnConstraints": "[center]"
+						"$rowConstraints": "[][][][][][][][]"
+						"$layoutConstraints": "fill"
+					} ) {
+						name: "panel39"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twoEuroBoxAmount"
+							"text": "5 rolls"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 0"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "oneEuroBoxAmount"
+							"text": "5 rolls"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 1"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiftyCentBoxAmount"
+							"text": "3 rolls"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 2"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twentyCentBoxAmount"
+							"text": "3 rolls"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 3"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "tenCentBoxAmount"
+							"text": "3 rolls"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 4"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiveCentBoxAmount"
+							"text": "3 rolls"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 5"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twoCentBoxAmount"
+							"text": "5 rolls"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 6"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "oneCentBoxAmount"
+							"text": "5 rolls"
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 7"
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 1 0,grow"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$columnConstraints": "[grow,fill]"
+						"$rowConstraints": "[][][][][][][][]"
+						"$layoutConstraints": "fill,alignx center"
+					} ) {
+						name: "panel40"
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "boxTwoEuroSpinner"
+							"font": #SwingDerivedFont0
+							"model": new javax.swing.SpinnerNumberModel( 2, 0, 2, 1 )
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 0,aligny center,growy 0"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "boxOneEuroSpinner"
+							"font": #SwingDerivedFont0
+							"model": new javax.swing.SpinnerNumberModel( 2, 0, 2, 1 )
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 1,aligny center,growy 0"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "boxFiftyCentSpinner"
+							"font": #SwingDerivedFont0
+							"model": new javax.swing.SpinnerNumberModel( 2, 0, 2, 1 )
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 2,aligny center,growy 0"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "boxTwentyCentSpinner"
+							"font": #SwingDerivedFont0
+							"model": new javax.swing.SpinnerNumberModel( 2, 0, 2, 1 )
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 3,aligny center,growy 0"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "boxTenCentSpinner"
+							"font": #SwingDerivedFont0
+							"model": new javax.swing.SpinnerNumberModel( 2, 0, 2, 1 )
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 4,aligny center,growy 0"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "boxFiveCentSpinner"
+							"font": #SwingDerivedFont0
+							"model": new javax.swing.SpinnerNumberModel( 2, 0, 2, 1 )
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 5,aligny center,growy 0"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "boxTwoCentSpinner"
+							"font": #SwingDerivedFont0
+							"model": new javax.swing.SpinnerNumberModel( 2, 0, 2, 1 )
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 6,aligny center,growy 0"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "boxOneCentSpinner"
+							"font": #SwingDerivedFont0
+							"model": new javax.swing.SpinnerNumberModel( 2, 0, 2, 1 )
+							"preferredSize": new java.awt.Dimension( 68, 34 )
+							"minimumSize": new java.awt.Dimension( 68, 34 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 7,aligny center,growy 0"
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 2 0,grow"
+					} )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 1,grow"
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 1 1 2,grow"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+				"$layoutConstraints": "fill,insets 0,hidemode 3,gap 0 0"
+				"$columnConstraints": "[grow,fill][grow,fill][grow,fill][grow,fill][grow,fill][grow,fill]"
+				"$rowConstraints": "[grow,fill]"
+			} ) {
+				name: "cashPanel"
+				"border": new javax.swing.border.TitledBorder( "cash" )
+				"enabled": false
+				"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$layoutConstraints": "fill"
+					"$rowConstraints": "[][][][][][][][][][]"
+				} ) {
+					name: "valuePanel"
+					"preferredSize": new java.awt.Dimension( 100, 500 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "twoEuroLabel"
+						"text": "2,00 €"
+						"preferredSize": new java.awt.Dimension( 100, 33 )
+						"horizontalAlignment": 4
+						"font": &SwingDerivedFont2 new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+						"focusable": false
+						"inheritsPopupMenu": false
+						"requestFocusEnabled": false
+						"verifyInputWhenFocusTarget": false
+						"minimumSize": new java.awt.Dimension( 100, 33 )
+						"maximumSize": new java.awt.Dimension( 100, 33 )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "oneEuroLabel"
+						"text": "1,00 €"
+						"preferredSize": new java.awt.Dimension( 100, 33 )
+						"horizontalAlignment": 4
+						"font": #SwingDerivedFont2
+						"focusable": false
+						"inheritsPopupMenu": false
+						"requestFocusEnabled": false
+						"verifyInputWhenFocusTarget": false
+						"minimumSize": new java.awt.Dimension( 100, 33 )
+						"maximumSize": new java.awt.Dimension( 100, 33 )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 1"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "fiftyCentLabel"
+						"text": "0,50 €"
+						"preferredSize": new java.awt.Dimension( 100, 33 )
+						"horizontalAlignment": 4
+						"font": #SwingDerivedFont2
+						"focusable": false
+						"inheritsPopupMenu": false
+						"requestFocusEnabled": false
+						"verifyInputWhenFocusTarget": false
+						"minimumSize": new java.awt.Dimension( 100, 33 )
+						"maximumSize": new java.awt.Dimension( 100, 33 )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 2"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "twentyCentLabel"
+						"text": "0,20 €"
+						"preferredSize": new java.awt.Dimension( 100, 33 )
+						"horizontalAlignment": 4
+						"font": #SwingDerivedFont2
+						"focusable": false
+						"inheritsPopupMenu": false
+						"requestFocusEnabled": false
+						"verifyInputWhenFocusTarget": false
+						"minimumSize": new java.awt.Dimension( 100, 33 )
+						"maximumSize": new java.awt.Dimension( 100, 33 )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 3"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "tenCentLabel"
+						"text": "0,10 €"
+						"preferredSize": new java.awt.Dimension( 100, 33 )
+						"horizontalAlignment": 4
+						"font": #SwingDerivedFont2
+						"focusable": false
+						"inheritsPopupMenu": false
+						"requestFocusEnabled": false
+						"verifyInputWhenFocusTarget": false
+						"minimumSize": new java.awt.Dimension( 100, 33 )
+						"maximumSize": new java.awt.Dimension( 100, 33 )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 4"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "fiveCentLabel"
+						"text": "0,05 €"
+						"preferredSize": new java.awt.Dimension( 100, 33 )
+						"horizontalAlignment": 4
+						"font": #SwingDerivedFont2
+						"focusable": false
+						"inheritsPopupMenu": false
+						"requestFocusEnabled": false
+						"verifyInputWhenFocusTarget": false
+						"minimumSize": new java.awt.Dimension( 100, 33 )
+						"maximumSize": new java.awt.Dimension( 100, 33 )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 5"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "twoCentLabel"
+						"text": "0,02 €"
+						"preferredSize": new java.awt.Dimension( 100, 33 )
+						"horizontalAlignment": 4
+						"font": #SwingDerivedFont2
+						"focusable": false
+						"inheritsPopupMenu": false
+						"requestFocusEnabled": false
+						"verifyInputWhenFocusTarget": false
+						"minimumSize": new java.awt.Dimension( 100, 33 )
+						"maximumSize": new java.awt.Dimension( 100, 33 )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 6"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "oneCentLabel"
+						"text": "0,01 €"
+						"preferredSize": new java.awt.Dimension( 100, 33 )
+						"horizontalAlignment": 4
+						"font": #SwingDerivedFont2
+						"focusable": false
+						"inheritsPopupMenu": false
+						"requestFocusEnabled": false
+						"verifyInputWhenFocusTarget": false
+						"maximumSize": new java.awt.Dimension( 100, 33 )
+						"minimumSize": new java.awt.Dimension( 100, 33 )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 7"
+					} )
+					add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+						name: "vSpacer1"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 8"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "twoHundredEuroLabel"
+						"text": "200,00 €"
+						"preferredSize": new java.awt.Dimension( 100, 33 )
+						"horizontalAlignment": 4
+						"font": #SwingDerivedFont2
+						"focusable": false
+						"inheritsPopupMenu": false
+						"requestFocusEnabled": false
+						"verifyInputWhenFocusTarget": false
+						"maximumSize": new java.awt.Dimension( 100, 33 )
+						"minimumSize": new java.awt.Dimension( 100, 33 )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 9"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "oneHundredEuroLabel"
+						"text": "100,00 €"
+						"preferredSize": new java.awt.Dimension( 100, 33 )
+						"horizontalAlignment": 4
+						"font": #SwingDerivedFont2
+						"focusable": false
+						"inheritsPopupMenu": false
+						"requestFocusEnabled": false
+						"verifyInputWhenFocusTarget": false
+						"maximumSize": new java.awt.Dimension( 100, 33 )
+						"minimumSize": new java.awt.Dimension( 100, 33 )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 10"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "fiftyEuroLabel"
+						"text": "50,00 €"
+						"preferredSize": new java.awt.Dimension( 100, 33 )
+						"horizontalAlignment": 4
+						"font": #SwingDerivedFont2
+						"focusable": false
+						"inheritsPopupMenu": false
+						"requestFocusEnabled": false
+						"verifyInputWhenFocusTarget": false
+						"maximumSize": new java.awt.Dimension( 100, 33 )
+						"minimumSize": new java.awt.Dimension( 100, 33 )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 11"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "twentyEuroLabel"
+						"text": "20,00 €"
+						"preferredSize": new java.awt.Dimension( 100, 33 )
+						"horizontalAlignment": 4
+						"font": #SwingDerivedFont2
+						"focusable": false
+						"inheritsPopupMenu": false
+						"requestFocusEnabled": false
+						"verifyInputWhenFocusTarget": false
+						"maximumSize": new java.awt.Dimension( 100, 33 )
+						"minimumSize": new java.awt.Dimension( 100, 33 )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 12"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "tenEuroLabel"
+						"text": "10,00 €"
+						"preferredSize": new java.awt.Dimension( 100, 33 )
+						"horizontalAlignment": 4
+						"font": #SwingDerivedFont2
+						"focusable": false
+						"inheritsPopupMenu": false
+						"requestFocusEnabled": false
+						"verifyInputWhenFocusTarget": false
+						"maximumSize": new java.awt.Dimension( 100, 33 )
+						"minimumSize": new java.awt.Dimension( 100, 33 )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 13"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "fiveEuroLabel"
+						"text": "5,00 €"
+						"preferredSize": new java.awt.Dimension( 100, 33 )
+						"horizontalAlignment": 4
+						"font": #SwingDerivedFont2
+						"focusable": false
+						"inheritsPopupMenu": false
+						"requestFocusEnabled": false
+						"verifyInputWhenFocusTarget": false
+						"maximumSize": new java.awt.Dimension( 100, 33 )
+						"minimumSize": new java.awt.Dimension( 100, 33 )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 14"
+					} )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 0"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$layoutConstraints": "fill,align center center"
+					"$columnConstraints": "[fill]"
+					"$rowConstraints": "[][][][][][][][][][]"
+				} ) {
+					name: "firstSpinnerNormal"
+					"preferredSize": new java.awt.Dimension( 100, 500 )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner2_1"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": &SwingDerivedFont3 new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner1_1"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 1"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner050_1"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 2"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner020_1"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 3"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner010_1"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 4"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner005_1"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 5"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner002_1"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 6"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner001_1"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 7"
+					} )
+					add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+						name: "vSpacer2"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 8"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner200_1"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 9"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner100_1"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 10"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner50_1"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 11"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner20_1"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 12"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner10_1"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 13"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner5_1"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 14"
+					} )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 0"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$columnConstraints": "[fill]"
+					"$layoutConstraints": "fill,align center center"
+					"$rowConstraints": "[][][][][][][][][][]"
+				} ) {
+					name: "secondSpinnerNormal"
+					"preferredSize": new java.awt.Dimension( 100, 500 )
+					"font": #SwingDerivedFont3
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner200_2"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": &SwingDerivedFont4 new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 9"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner100_2"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont4
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 10"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner50_2"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont4
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 11"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner20_2"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont4
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 12"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner10_2"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont4
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 13"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner5_2"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont4
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 14"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner2_2"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont4
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner1_2"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont4
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 1"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner050_2"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont4
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 2"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner020_2"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont4
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 3"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner010_2"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont4
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 4"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner005_2"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont4
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 5"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner002_2"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont4
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 6"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner001_2"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont4
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 7"
+					} )
+					add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+						name: "vSpacer3"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 8"
+					} )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 2 0"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$layoutConstraints": "fill,align center center"
+					"$columnConstraints": "[fill]"
+					"$rowConstraints": "[][][][][][][][][][]"
+				} ) {
+					name: "thirdSpinnerNormal"
+					"preferredSize": new java.awt.Dimension( 100, 500 )
+					"font": #SwingDerivedFont3
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner2_3"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": &SwingDerivedFont5 new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner1_3"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont5
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 1"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner050_3"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont5
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 2"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner020_3"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont5
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 3"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner010_3"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont5
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 4"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner005_3"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont5
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 5"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner002_3"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont5
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 6"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner001_3"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont5
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 7"
+					} )
+					add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+						name: "vSpacer4"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 8"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner200_3"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont5
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 9"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner100_3"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont5
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 10"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner50_3"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont5
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 11"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner20_3"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont5
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 12"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner10_3"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont5
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 13"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner5_3"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont5
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 14"
+					} )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 3 0"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$columnConstraints": "[fill]"
+					"$layoutConstraints": "fill,align center center"
+					"$rowConstraints": "[][][][][][][][][][]"
+				} ) {
+					name: "fourthSpinnerNormal"
+					"preferredSize": new java.awt.Dimension( 100, 500 )
+					"font": #SwingDerivedFont3
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner2_4"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": &SwingDerivedFont6 new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner1_4"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont6
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 1"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner050_4"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont6
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 2"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner020_4"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont6
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 3"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner010_4"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont6
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 4"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner005_4"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont6
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 5"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner002_4"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont6
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 6"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner001_4"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont6
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 7"
+					} )
+					add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+						name: "vSpacer5"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 8"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner200_4"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont6
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 9"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner100_4"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont6
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 10"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner50_4"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont6
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 11"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner20_4"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont6
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 12"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner10_4"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont6
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 13"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner5_4"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont6
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 14"
+					} )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 4 0"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$columnConstraints": "[fill]"
+					"$layoutConstraints": "fill,align center center"
+					"$rowConstraints": "[][][][][][][][][][]"
+				} ) {
+					name: "fifthSpinnerNormal"
+					"preferredSize": new java.awt.Dimension( 100, 500 )
+					"font": #SwingDerivedFont3
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner2_5"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner1_5"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 1"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner050_5"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 2"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner020_5"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 3"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner010_5"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 4"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner005_5"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 5"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner002_5"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 6"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner001_5"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 7"
+					} )
+					add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+						name: "vSpacer6"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 8"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner200_5"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 9"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner100_5"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 10"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner50_5"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 11"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner20_5"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 12"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner10_5"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 13"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner5_5"
+						"preferredSize": new java.awt.Dimension( 64, 30 )
+						"model": new javax.swing.SpinnerNumberModel( 0, 0, 999, 1 )
+						"font": #SwingDerivedFont3
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 14"
+					} )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 5 0"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$columnConstraints": "[grow,fill][fill]"
+					"$layoutConstraints": "fill,align center center"
+				} ) {
+					name: "amountPanelNormal"
+					"preferredSize": new java.awt.Dimension( 100, 450 )
+					"font": #SwingDerivedFont3
+					"minimumSize": new java.awt.Dimension( 118, 450 )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$columnConstraints": "[grow,fill]"
+						"$layoutConstraints": "fill,align center center"
+						"$rowConstraints": "[][][][][][][][][][]"
+					} ) {
+						name: "panel44"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twoEuroLabelAmount"
+							"text": "0"
+							"preferredSize": &Dimension0 new java.awt.Dimension( 56, 30 )
+							"horizontalAlignment": 4
+							"font": #SwingDerivedFont3
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 0,grow"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "oneEuroLabelAmount"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 1,grow"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiftyCentLabelAmount"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 2,grow"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twentyCentLabelAmount"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 3,grow"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "tenCentLabelAmount"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 4,grow"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiveCentLabelAmount"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 5,grow"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twoCentLabelAmount"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 6,grow"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "oneCentLabelAmount"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 7,grow"
+						} )
+						add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+							name: "vSpacer7"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 8"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twohundredEuroLabelAmount"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 9,grow"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "onehundredEuroLabelAmount"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 10,grow"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiftyEuroLabelAmount"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 11,grow"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twentyEuroLabelAmount"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 12,grow"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "tenEuroLabelAmount"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 13,grow"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiveEuroLabelAmount"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 14,grow"
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0,grow"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$layoutConstraints": "fill,align center center"
+						"$rowConstraints": "[][][][][][][][][][]"
+					} ) {
+						name: "panel45"
+						"minimumSize": new java.awt.Dimension( 30, 525 )
+						"preferredSize": new java.awt.Dimension( 30, 525 )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twoEuroLabelX"
+							"text": " x"
+							"preferredSize": new java.awt.Dimension( 8, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 0,growx"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "oneEuroLabelX"
+							"text": " x"
+							"preferredSize": new java.awt.Dimension( 8, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 1,growx"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiftyCentLabelX"
+							"text": " x"
+							"preferredSize": new java.awt.Dimension( 8, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 2,growx"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twentyCentLabelX"
+							"text": " x"
+							"preferredSize": new java.awt.Dimension( 8, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 3,growx"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "tenCentLabelX"
+							"text": " x"
+							"preferredSize": new java.awt.Dimension( 8, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 4,growx"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiveCentLabelX"
+							"text": " x"
+							"preferredSize": new java.awt.Dimension( 8, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 5,growx"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twoCentLabelX"
+							"text": " x"
+							"preferredSize": new java.awt.Dimension( 8, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 6,growx"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "oneCentLabelX"
+							"text": " x"
+							"preferredSize": new java.awt.Dimension( 8, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 7,growx"
+						} )
+						add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+							name: "vSpacer8"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 8"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twohundredEuroLabelX"
+							"text": " x"
+							"preferredSize": new java.awt.Dimension( 8, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							"horizontalTextPosition": 2
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 9,growx"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "onehundredEuroLabelX"
+							"text": " x"
+							"preferredSize": new java.awt.Dimension( 8, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							"horizontalTextPosition": 2
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 10,growx"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiftyEuroLabelX"
+							"text": " x"
+							"preferredSize": new java.awt.Dimension( 8, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							"horizontalTextPosition": 2
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 11,growx"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twentyEuroLabelX"
+							"text": " x"
+							"preferredSize": new java.awt.Dimension( 8, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							"horizontalTextPosition": 2
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 12,growx"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "tenEuroLabelX"
+							"text": " x"
+							"preferredSize": new java.awt.Dimension( 8, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							"horizontalTextPosition": 2
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 13,growx"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiveEuroLabelX"
+							"text": " x"
+							"preferredSize": new java.awt.Dimension( 8, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							"horizontalTextPosition": 2
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 14,growx"
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 1 0,grow"
+					} )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 6 0,grow"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$columnConstraints": "[][]"
+					"$layoutConstraints": "fill,align center center"
+				} ) {
+					name: "valueRowPanelNormal"
+					"preferredSize": new java.awt.Dimension( 100, 500 )
+					"font": #SwingDerivedFont3
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$layoutConstraints": "fill,align center center"
+						"$columnConstraints": "[grow]"
+						"$rowConstraints": "[][][][][][][][][][]"
+					} ) {
+						name: "panel46"
+						"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twoEuroLabelValue"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 0"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "oneEuroLabelValue"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 1"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiftyCentLabelValue"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 2"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twentyCentLabelValue"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 3"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "tenCentLabelValue"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 4"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiveCentLabelValue"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 5"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twoCentLabelValue"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 6"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "oneCentLabelValue"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 7"
+						} )
+						add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+							name: "vSpacer9"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 8"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twohundredEuroLabelValue"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 9"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "onehundredEuroLabelValue"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 10"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiftyEuroLabelValue"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 11"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twentyEuroLabelValue"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 12"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "tenEuroLabelValue"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 13"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiveEuroLabelValue"
+							"text": "0"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 4
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 4
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 14"
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0,grow"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$layoutConstraints": "fill,align center center"
+						"$columnConstraints": "[fill]"
+						"$rowConstraints": "[][][][][][][][][][]"
+					} ) {
+						name: "panel47"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twoEuroLabelSymbol"
+							"text": " €"
+							"preferredSize": new java.awt.Dimension( 12, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 0"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "oneEuroLabelSymbol"
+							"text": " €"
+							"preferredSize": new java.awt.Dimension( 12, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 1"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiftyCentLabelSymbol"
+							"text": " €"
+							"preferredSize": new java.awt.Dimension( 12, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 2"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twentyCentLabelSymbol"
+							"text": " €"
+							"preferredSize": new java.awt.Dimension( 12, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 3"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "tenCentLabelSymbol"
+							"text": " €"
+							"preferredSize": new java.awt.Dimension( 12, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 4"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiveCentLabelSymbol"
+							"text": " €"
+							"preferredSize": new java.awt.Dimension( 12, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 5"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twoCentLabelSymbol"
+							"text": " €"
+							"preferredSize": new java.awt.Dimension( 12, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 6"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "oneCentLabelSymbol"
+							"text": " €"
+							"preferredSize": new java.awt.Dimension( 12, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 7"
+						} )
+						add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+							name: "vSpacer10"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 8"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twohundredEuroLabelSymbol"
+							"text": " €"
+							"preferredSize": new java.awt.Dimension( 12, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 9"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "onehundredEuroLabelSymbol"
+							"text": " €"
+							"preferredSize": new java.awt.Dimension( 12, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 10"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiftyEuroLabelSymbol"
+							"text": " €"
+							"preferredSize": new java.awt.Dimension( 12, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 11"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "twentyEuroLabelSymbol"
+							"text": " €"
+							"preferredSize": new java.awt.Dimension( 12, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 12"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "tenEuroLabelSymbol"
+							"text": " €"
+							"preferredSize": new java.awt.Dimension( 12, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 13"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fiveEuroLabelSymbol"
+							"text": " €"
+							"preferredSize": new java.awt.Dimension( 12, 30 )
+							"horizontalAlignment": 2
+							"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"font": #SwingDerivedFont3
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 14"
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 1 0,grow"
+					} )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 7 0,grow"
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 1"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+				"$layoutConstraints": "fill,insets 0,hidemode 3,gap 5 5"
+				"$columnConstraints": "[left][left][200:200,left][left]"
+				"$rowConstraints": "[fill]"
+			} ) {
+				name: "topPanel"
+				"focusable": false
+				"enabled": false
+				"requestFocusEnabled": false
+				"verifyInputWhenFocusTarget": false
+				"autoscrolls": true
+				"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$columnConstraints": "[][]"
+					"$rowConstraints": "[grow,fill]"
+					"$layoutConstraints": "fill,align center center"
+				} ) {
+					name: "registerPanel"
+					"border": new javax.swing.border.TitledBorder( "register" )
+					"enabled": false
+					"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"name": "buttonPanel"
+					"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "fullRegisterSpinner"
+						"model": new javax.swing.SpinnerNumberModel( 2, 0, 2, 1 )
+						"minimumSize": new java.awt.Dimension( 100, 30 )
+						"preferredSize": new java.awt.Dimension( 100, 30 )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0,align trailing center,grow 0 0"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "fullRegisterLabel"
+						"text": "full registers"
+						"horizontalAlignment": 0
+						"enabled": false
+						"font": #SwingDerivedFont0
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 1 0"
+					} )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 0"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+					name: "buttonPanel"
+					"border": new javax.swing.border.TitledBorder( "action" )
+					"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"focusable": false
+					"enabled": false
+					"minimumSize": new java.awt.Dimension( 700, 0 )
+					"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "resetBtn"
+						"text": "RESET"
+						"cursor": new java.awt.Cursor( 12 )
+						"font": &SwingDerivedFont7 new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "resetBtnActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JSeparator" ) {
+						name: "separator1"
+						"orientation": 1
+						"preferredSize": new java.awt.Dimension( 3, 10 )
+						"requestFocusEnabled": false
+						"background": sfield java.awt.Color white
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "registerBtn"
+						"text": "register"
+						"font": #SwingDerivedFont7
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "registerBtnActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "pdfBtn"
+						"text": "pdf"
+						"font": #SwingDerivedFont7
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "pdfBtnActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "calculateBtn"
+						"text": "calculate"
+						"font": #SwingDerivedFont7
+						"doubleBuffered": true
+						"opaque": true
+						"selected": true
+						"background": new java.awt.Color( 102, 153, 255, 255 )
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+							"JavaCodeGenerator.variableName": "ausrechnenBtn2"
+						}
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "calculateBtnActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JSeparator" ) {
+						name: "separator2"
+						"orientation": 1
+						"preferredSize": new java.awt.Dimension( 3, 10 )
+						"requestFocusEnabled": false
+						"background": sfield java.awt.Color white
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "debitBtnNew"
+						"text": "debit"
+						"font": #SwingDerivedFont7
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "debitBtnNewActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JSeparator" ) {
+						name: "separator3"
+						"orientation": 1
+						"preferredSize": new java.awt.Dimension( 3, 10 )
+						"requestFocusEnabled": false
+						"background": sfield java.awt.Color white
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "dateBtn"
+						"text": "date"
+						"font": #SwingDerivedFont7
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "dateBtnActionPerformed", true ) )
+					} )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 0,growx"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+					name: "datePanel"
+					"border": new javax.swing.border.TitledBorder( "date" )
+					"preferredSize": new java.awt.Dimension( 200, 0 )
+					"enabled": false
+					"focusable": false
+					"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "dateSpinner"
+						"doubleBuffered": true
+						"model": new javax.swing.SpinnerDateModel {
+							calendarField: 12
+							value: new java.util.Date( -9223372036854775808l )
+						}
+						"minimumSize": new java.awt.Dimension( 180, 30 )
+						"preferredSize": new java.awt.Dimension( 180, 30 )
+						"font": #SwingDerivedFont7
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					} )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 2 0"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+					name: "debitPanel"
+					"border": new javax.swing.border.TitledBorder( "debit" )
+					"requestFocusEnabled": false
+					"verifyInputWhenFocusTarget": false
+					"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"enabled": false
+					"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "debitTextField"
+						"minimumSize": new java.awt.Dimension( 200, 30 )
+						"preferredSize": new java.awt.Dimension( 200, 30 )
+						"opaque": true
+						"font": #SwingDerivedFont7
+						"text": "0"
+						auxiliary() {
+							"JavaCodeGenerator.variableModifiers": 4
+						}
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label69"
+						"text": " €"
+						"focusable": false
+						"requestFocusEnabled": false
+						"verifyInputWhenFocusTarget": false
+						"inheritsPopupMenu": false
+						"minimumSize": new java.awt.Dimension( 12, 30 )
+						"preferredSize": new java.awt.Dimension( 12, 30 )
+						"maximumSize": new java.awt.Dimension( 12, 30 )
+					} )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 3 0"
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 0 2 1,grow"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1395, 900 )
+		} )
+	}
+}
