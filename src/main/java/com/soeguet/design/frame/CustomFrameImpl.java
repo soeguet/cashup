@@ -18,7 +18,7 @@ public class CustomFrameImpl extends CustomFrame {
 
         DailyCash dailyModule = new DailyCashImpl();
         dailyModule.setBounds(0, 0, dailyModule.getPreferredSize().width, dailyModule.getPreferredSize().height);
-        resizeFrameIfNotBigEnough((int) dailyModule.getPreferredSize().getWidth(), (int) dailyModule.getPreferredSize().getHeight());
+        resizeFrameIfNotBigEnough((int) dailyModule.getSize().getWidth(), (int) dailyModule.getSize().getHeight());
         form_desktopPane.add(dailyModule);
     }
 
@@ -27,7 +27,7 @@ public class CustomFrameImpl extends CustomFrame {
 
         WeeklyCashUpImpl weeklyModule = new WeeklyCashUpImpl();
         weeklyModule.setBounds(0, 0, weeklyModule.getPreferredSize().width + 100, weeklyModule.getPreferredSize().height);
-        resizeFrameIfNotBigEnough((int) weeklyModule.getPreferredSize().getWidth(), (int) weeklyModule.getPreferredSize().getHeight());
+        resizeFrameIfNotBigEnough((int) weeklyModule.getSize().getWidth(), (int) weeklyModule.getSize().getHeight());
         form_desktopPane.add(weeklyModule);
     }
 
@@ -39,16 +39,17 @@ public class CustomFrameImpl extends CustomFrame {
 
     private void resizeFrameIfNotBigEnough(int width, int height) {
 
-        if (width > this.getWidth()) {
+        while (width > this.getWidth()) {
 
-            this.setSize((int) (this.getWidth() * 1.05), this.getHeight());
-            resizeFrameIfNotBigEnough(width, height);
+            this.setSize(this.getWidth() + 15, this.getHeight());
+        }
 
-        } else if (height > this.getHeight()) {
+        int titleBarHeight = this.getHeight() - this.getContentPane().getHeight();
 
-            this.setSize(this.getWidth(), (int) (this.getHeight() * 1.1));
-            resizeFrameIfNotBigEnough(width, height);
+        while (height > this.getHeight() - titleBarHeight) {
 
+            this.setSize(this.getWidth(), this.getHeight() + 15);
         }
     }
+
 }
