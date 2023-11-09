@@ -6,6 +6,8 @@ import com.soeguet.design.register.weekly.WeeklyCashUpImpl;
 
 import java.awt.event.ActionEvent;
 
+import javax.swing.SwingUtilities;
+
 public class CustomFrameImpl extends CustomFrame {
 
     public CustomFrameImpl() {
@@ -26,7 +28,8 @@ public class CustomFrameImpl extends CustomFrame {
     protected void menuItemWeeklyModule(ActionEvent e) {
 
         WeeklyCashUpImpl weeklyModule = new WeeklyCashUpImpl();
-        weeklyModule.setBounds(0, 0, weeklyModule.getPreferredSize().width + 100, weeklyModule.getPreferredSize().height);
+        weeklyModule.setBounds(0, 0, weeklyModule.getPreferredSize().width + 100,
+                weeklyModule.getPreferredSize().height);
         resizeFrameIfNotBigEnough((int) weeklyModule.getSize().getWidth(), (int) weeklyModule.getSize().getHeight());
         form_desktopPane.add(weeklyModule);
     }
@@ -39,17 +42,24 @@ public class CustomFrameImpl extends CustomFrame {
 
     private void resizeFrameIfNotBigEnough(int width, int height) {
 
-        while (width > this.getWidth()) {
+        SwingUtilities.invokeLater(() -> {
 
-            this.setSize(this.getWidth() + 15, this.getHeight());
-        }
+            int currentHeight = this.getHeight();
 
-        int titleBarHeight = this.getHeight() - this.getContentPane().getHeight();
+            while (width > this.getWidth()) {
 
-        while (height > this.getHeight() - titleBarHeight) {
+                this.setSize(this.getWidth() + 15, currentHeight);
+            }
 
-            this.setSize(this.getWidth(), this.getHeight() + 15);
-        }
+            int titleBarHeight = currentHeight - this.getContentPane().getHeight();
+
+            int currentWidth = this.getWidth();
+
+            while (height > this.getHeight() - titleBarHeight) {
+
+                this.setSize(currentWidth, this.getHeight() + 15);
+            }
+        });
     }
 
 }
